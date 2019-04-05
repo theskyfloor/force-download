@@ -1,0 +1,40 @@
+{
+    "name": "theskyfloor/force-download",
+    "description": "Simple action to force downloading of an asset by ID without any user/permissions checks.",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "force download"
+    ],
+    "support": {
+        "docs": "https://github.com/force-download/force-download/blob/master/README.md",
+        "issues": "https://github.com/force-download/force-download/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alan Miller",
+            "homepage": "http://www.theskyfloor.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "theskyfloor\\forcedownload\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Force Download",
+        "handle": "force-download",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/force-download/force-download/master/CHANGELOG.md",
+        "class": "theskyfloor\\forcedownload\\ForceDownload"
+    }
+}
