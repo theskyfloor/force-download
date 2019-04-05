@@ -26,7 +26,11 @@ Simple action to force downloading of an asset by ID without any user/permission
 
 ## Using Force Download
 
+Output a complete a tag automatically.
+
     {{craft.forceDownload.downloadUrl(assetId)}}
+
+Output the download href and style it however you want.
 
     <a href="{{craft.forceDownload.download(assetId)}}">Download</a>
 
