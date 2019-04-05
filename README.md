@@ -1,7 +1,5 @@
 # Force Download plugin for Craft CMS 3.x
 
-Simple action to force downloading of an asset by ID without any user/permissions checks.
-
 ![Screenshot](resources/img/plugin-logo.png)
 
 ## Requirements
@@ -18,25 +16,23 @@ To install the plugin, follow these instructions.
 
 2. Then tell Composer to load the plugin:
 
-        composer require force-download/force-download
+        composer require theskyfloor/force-download
 
 3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Force Download.
 
 ## Force Download Overview
 
--Insert text here-
-
-## Configuring Force Download
-
--Insert text here-
+Simple action to force downloading of an asset by ID without any user/permissions checks.
 
 ## Using Force Download
 
--Insert text here-
+{{craft.forceDownload.downloadUrl(assetId)}}
+
+<a href="{{craft.forceDownload.download(assetId)}}">Download</a>
 
 ## Force Download Roadmap
 
-Some things to do, and ideas for potential features:
+Log downloads
 
 * Release it
 
